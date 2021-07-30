@@ -1,0 +1,110 @@
+import { StyleSheet } from 'react-native';
+import { w, h } from '../../utils/Dimensions';
+import fonts from '../../theme/fonts';
+import { Right } from 'native-base';
+export default StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    backgroundColor: '#f7f6fb',
+  },
+  headerImage: {
+    height: h(13),
+    width: w(100),
+    resizeMode: 'cover',
+    alignSelf: 'center',
+  },
+  headingText: {
+    color: '#fff',
+    fontSize: h(2.8),
+    //: fonts.semiBold,
+    alignSelf: 'center',
+    marginTop: h(5),
+  },
+  bckArrow: {
+    tintColor: '#fff',
+    height: h(4),
+    width: h(4),
+    resizeMode: 'contain',
+  },
+  headerText: {
+    color: '#fff',
+    fontSize: h(3),
+    //: fonts.semiBold,
+    alignSelf: 'center',
+    alignItems: 'center',
+    fontWeight: 'bold',
+  },
+  userImageHeader: {
+    height: h(4.5),
+    width: h(4.5),
+    borderRadius: h(1),
+    alignItems: 'center',
+    marginRight: h(1),
+  },
+  semiBoldText: {
+    color: '#000',
+    fontSize: h(2),
+    //: fonts.semiBold,
+  },
+  FriendMsgesCart: {
+    width: w(65),
+    minHeight: h(8),
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    borderTopLeftRadius: h(4),
+    borderTopRightRadius: h(4),
+    borderBottomRightRadius: h(4),
+    shadowOffset: {
+      width: 0,
+      height: 8,
+    },
+    shadowOpacity: 0.37,
+    shadowRadius: 7.49,
+    elevation: 3,
+    padding: h(2),
+  },
+  MyMsgesCart: {
+    width: w(65),
+    minHeight: h(8),
+    backgroundColor: '#df396b',
+    borderWidth: 1,
+    borderColor: '#E0E0E0',
+    borderTopLeftRadius: h(4),
+    borderTopRightRadius: h(4),
+    borderBottomLeftRadius: h(4),
+    shadowOffset: {
+      width: 0,
+      height: 8,
+    },
+    shadowOpacity: 0.37,
+    shadowRadius: 7.49,
+    elevation: 3,
+    padding: h(2),
+  },
+  MymessageText: {
+    color: '#fff',
+    fontSize: h(1.8),
+    //: fonts.lightText,
+  },
+  friendmessageText: {
+    color: '#000',
+    fontSize: h(1.8),
+    //: fonts.lightText,
+  },
+  textFieldView: {
+    position: 'absolute',
+    bottom: Platform.OS === 'ios' ? h(7.5) : 50,
+    flexDirection: 'row',
+    alignItems: 'center',
+    // alignSelf:'center',
+    minHeight: h(6.5),
+    maxHeight: h(11),
+    justifyContent:"space-between",
+    width: Platform.OS === 'ios' ? '78%' : '78%',
+    padding: h(0.5),
+    backgroundColor: '#fff',
+    borderRadius: h(25),
+    marginHorizontal: h(1.5)
+  },
+});
